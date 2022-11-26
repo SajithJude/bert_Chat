@@ -17,7 +17,7 @@ def get_models():
 if "history" not in st.session_state:
     st.session_state.history = []
 
-st.title("Hello Chatbot")
+st.title("Conversational A.I chatbot using BERT")
 
 
 def generate_answer():
@@ -37,4 +37,4 @@ st.text_input("Talk to the bot", key="input_text", on_change=generate_answer)
 
 for chat in st.session_state.history:
     st_message(**chat)  # unpacking
-Footer
+# Footer
